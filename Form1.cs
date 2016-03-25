@@ -56,7 +56,7 @@ namespace WiFi_Connector
             //name.Text = lstNetworks.SelectedItems[0].ToString();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        public void btnSearch_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem item in lstNetworks.Items)
             {
@@ -83,30 +83,16 @@ namespace WiFi_Connector
         {
             if (e.KeyCode == Keys.Enter)
             {
-                foreach (ListViewItem item in lstNetworks.Items)
-                {
-                    if (item.Text.ToLower().StartsWith(txtSearch.Text.ToLower()))
-                    {
-                        item.Selected = true;
-                        item.BackColor = Color.CornflowerBlue;
-                        item.ForeColor = Color.White;
-                    }
-                    else
-                    {
-                        item.Selected = false;
-                        item.BackColor = Color.White;
-                        item.ForeColor = Color.Black;
-                    }
-                    if (lstNetworks.SelectedItems.Count == 1)
-                    {
-                        lstNetworks.Focus();
-                    }
-                }
+                btnSearch_Click(this, new EventArgs());
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
         }
+    }
+
+    public class Enter
+    {
     }
 }

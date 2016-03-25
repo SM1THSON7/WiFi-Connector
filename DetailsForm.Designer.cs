@@ -95,7 +95,7 @@
             // lblWpsState
             // 
             this.lblWpsState.AutoSize = true;
-            this.lblWpsState.Location = new System.Drawing.Point(29, 24);
+            this.lblWpsState.Location = new System.Drawing.Point(29, 48);
             this.lblWpsState.Name = "lblWpsState";
             this.lblWpsState.Size = new System.Drawing.Size(57, 13);
             this.lblWpsState.TabIndex = 0;
@@ -103,14 +103,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 40);
+            this.textBox1.Location = new System.Drawing.Point(32, 64);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(191, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(245, 40);
+            this.textBox2.Location = new System.Drawing.Point(245, 64);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(183, 20);
             this.textBox2.TabIndex = 3;
@@ -118,7 +118,7 @@
             // lblWpsVersion
             // 
             this.lblWpsVersion.AutoSize = true;
-            this.lblWpsVersion.Location = new System.Drawing.Point(242, 24);
+            this.lblWpsVersion.Location = new System.Drawing.Point(242, 48);
             this.lblWpsVersion.Name = "lblWpsVersion";
             this.lblWpsVersion.Size = new System.Drawing.Size(67, 13);
             this.lblWpsVersion.TabIndex = 2;
@@ -126,7 +126,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(32, 79);
+            this.textBox3.Location = new System.Drawing.Point(32, 103);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(191, 20);
             this.textBox3.TabIndex = 5;
@@ -135,7 +135,7 @@
             // lblResponseType
             // 
             this.lblResponseType.AutoSize = true;
-            this.lblResponseType.Location = new System.Drawing.Point(29, 63);
+            this.lblResponseType.Location = new System.Drawing.Point(29, 87);
             this.lblResponseType.Name = "lblResponseType";
             this.lblResponseType.Size = new System.Drawing.Size(82, 13);
             this.lblResponseType.TabIndex = 4;
@@ -143,7 +143,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(32, 118);
+            this.textBox4.Location = new System.Drawing.Point(32, 142);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(191, 20);
             this.textBox4.TabIndex = 7;
@@ -151,7 +151,7 @@
             // txtModelName
             // 
             this.txtModelName.AutoSize = true;
-            this.txtModelName.Location = new System.Drawing.Point(29, 102);
+            this.txtModelName.Location = new System.Drawing.Point(29, 126);
             this.txtModelName.Name = "txtModelName";
             this.txtModelName.Size = new System.Drawing.Size(67, 13);
             this.txtModelName.TabIndex = 6;
@@ -159,7 +159,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(245, 118);
+            this.textBox5.Location = new System.Drawing.Point(245, 142);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(183, 20);
             this.textBox5.TabIndex = 9;
@@ -167,7 +167,7 @@
             // txtModelNumber
             // 
             this.txtModelNumber.AutoSize = true;
-            this.txtModelNumber.Location = new System.Drawing.Point(242, 102);
+            this.txtModelNumber.Location = new System.Drawing.Point(242, 126);
             this.txtModelNumber.Name = "txtModelNumber";
             this.txtModelNumber.Size = new System.Drawing.Size(76, 13);
             this.txtModelNumber.TabIndex = 8;
@@ -175,7 +175,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(32, 167);
+            this.textBox6.Location = new System.Drawing.Point(32, 184);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(191, 20);
             this.textBox6.TabIndex = 11;
@@ -183,7 +183,7 @@
             // lblSerialNumber
             // 
             this.lblSerialNumber.AutoSize = true;
-            this.lblSerialNumber.Location = new System.Drawing.Point(29, 151);
+            this.lblSerialNumber.Location = new System.Drawing.Point(29, 168);
             this.lblSerialNumber.Name = "lblSerialNumber";
             this.lblSerialNumber.Size = new System.Drawing.Size(73, 13);
             this.lblSerialNumber.TabIndex = 10;
@@ -191,7 +191,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(32, 206);
+            this.textBox7.Location = new System.Drawing.Point(32, 224);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(191, 20);
             this.textBox7.TabIndex = 13;
@@ -199,7 +199,7 @@
             // lblDeviceName
             // 
             this.lblDeviceName.AutoSize = true;
-            this.lblDeviceName.Location = new System.Drawing.Point(29, 190);
+            this.lblDeviceName.Location = new System.Drawing.Point(29, 208);
             this.lblDeviceName.Name = "lblDeviceName";
             this.lblDeviceName.Size = new System.Drawing.Size(72, 13);
             this.lblDeviceName.TabIndex = 12;
@@ -207,7 +207,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(245, 206);
+            this.textBox8.Location = new System.Drawing.Point(245, 224);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(183, 20);
             this.textBox8.TabIndex = 15;
@@ -215,7 +215,7 @@
             // lblDeviceType
             // 
             this.lblDeviceType.AutoSize = true;
-            this.lblDeviceType.Location = new System.Drawing.Point(242, 190);
+            this.lblDeviceType.Location = new System.Drawing.Point(242, 208);
             this.lblDeviceType.Name = "lblDeviceType";
             this.lblDeviceType.Size = new System.Drawing.Size(68, 13);
             this.lblDeviceType.TabIndex = 14;
@@ -223,7 +223,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(32, 256);
+            this.textBox9.Location = new System.Drawing.Point(32, 274);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(191, 20);
             this.textBox9.TabIndex = 17;
@@ -231,7 +231,7 @@
             // lblManufacturer
             // 
             this.lblManufacturer.AutoSize = true;
-            this.lblManufacturer.Location = new System.Drawing.Point(35, 240);
+            this.lblManufacturer.Location = new System.Drawing.Point(35, 258);
             this.lblManufacturer.Name = "lblManufacturer";
             this.lblManufacturer.Size = new System.Drawing.Size(70, 13);
             this.lblManufacturer.TabIndex = 16;
@@ -239,7 +239,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(32, 295);
+            this.textBox10.Location = new System.Drawing.Point(32, 313);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(396, 20);
             this.textBox10.TabIndex = 19;
@@ -247,7 +247,7 @@
             // lblUUIDEnrolle
             // 
             this.lblUUIDEnrolle.AutoSize = true;
-            this.lblUUIDEnrolle.Location = new System.Drawing.Point(29, 279);
+            this.lblUUIDEnrolle.Location = new System.Drawing.Point(29, 297);
             this.lblUUIDEnrolle.Name = "lblUUIDEnrolle";
             this.lblUUIDEnrolle.Size = new System.Drawing.Size(69, 13);
             this.lblUUIDEnrolle.TabIndex = 18;
@@ -255,7 +255,7 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(32, 339);
+            this.textBox11.Location = new System.Drawing.Point(32, 357);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(396, 20);
             this.textBox11.TabIndex = 21;
@@ -263,7 +263,7 @@
             // lblSupportedRates
             // 
             this.lblSupportedRates.AutoSize = true;
-            this.lblSupportedRates.Location = new System.Drawing.Point(29, 323);
+            this.lblSupportedRates.Location = new System.Drawing.Point(29, 341);
             this.lblSupportedRates.Name = "lblSupportedRates";
             this.lblSupportedRates.Size = new System.Drawing.Size(87, 13);
             this.lblSupportedRates.TabIndex = 20;
@@ -271,7 +271,7 @@
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(32, 380);
+            this.textBox12.Location = new System.Drawing.Point(32, 398);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(191, 20);
             this.textBox12.TabIndex = 23;
@@ -279,7 +279,7 @@
             // lblBand
             // 
             this.lblBand.AutoSize = true;
-            this.lblBand.Location = new System.Drawing.Point(29, 364);
+            this.lblBand.Location = new System.Drawing.Point(29, 382);
             this.lblBand.Name = "lblBand";
             this.lblBand.Size = new System.Drawing.Size(32, 13);
             this.lblBand.TabIndex = 22;
@@ -287,7 +287,7 @@
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(245, 380);
+            this.textBox13.Location = new System.Drawing.Point(245, 398);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(183, 20);
             this.textBox13.TabIndex = 25;
@@ -295,7 +295,7 @@
             // lblAuthentication
             // 
             this.lblAuthentication.AutoSize = true;
-            this.lblAuthentication.Location = new System.Drawing.Point(242, 364);
+            this.lblAuthentication.Location = new System.Drawing.Point(242, 382);
             this.lblAuthentication.Name = "lblAuthentication";
             this.lblAuthentication.Size = new System.Drawing.Size(75, 13);
             this.lblAuthentication.TabIndex = 24;
@@ -303,7 +303,7 @@
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(32, 425);
+            this.textBox14.Location = new System.Drawing.Point(32, 443);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(191, 20);
             this.textBox14.TabIndex = 27;
@@ -311,7 +311,7 @@
             // lblCipher
             // 
             this.lblCipher.AutoSize = true;
-            this.lblCipher.Location = new System.Drawing.Point(29, 409);
+            this.lblCipher.Location = new System.Drawing.Point(29, 427);
             this.lblCipher.Name = "lblCipher";
             this.lblCipher.Size = new System.Drawing.Size(37, 13);
             this.lblCipher.TabIndex = 26;
@@ -319,7 +319,7 @@
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(245, 425);
+            this.textBox15.Location = new System.Drawing.Point(245, 443);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(183, 20);
             this.textBox15.TabIndex = 29;
@@ -327,7 +327,7 @@
             // lblPacketSize
             // 
             this.lblPacketSize.AutoSize = true;
-            this.lblPacketSize.Location = new System.Drawing.Point(242, 409);
+            this.lblPacketSize.Location = new System.Drawing.Point(242, 427);
             this.lblPacketSize.Name = "lblPacketSize";
             this.lblPacketSize.Size = new System.Drawing.Size(64, 13);
             this.lblPacketSize.TabIndex = 28;
