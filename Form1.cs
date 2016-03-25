@@ -1,12 +1,8 @@
 ﻿using NativeWifi;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WiFi_Connector
@@ -52,7 +48,10 @@ namespace WiFi_Connector
 
         private void lstNetworks_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            DetailsControl dc = new DetailsControl(this);
+            DetailsForm tf = new DetailsForm();
+            tf.ShowDialog();
+
+            //DetailsControl dc = new DetailsControl(this);
 
             //name.Text = lstNetworks.SelectedItems[0].ToString();
         }
@@ -104,11 +103,6 @@ namespace WiFi_Connector
                     }
                 }
             }
-        }
-
-        private void BtnSearch_Enter(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         private void Form1_Load(object sender, EventArgs e)
