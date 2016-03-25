@@ -105,13 +105,35 @@ namespace WiFi_Connector
         {
             if (e.KeyCode == Keys.Enter)
             {
-                btnSearch.Enter += btnSearch_Click;
+                foreach (ListViewItem item in lstNetworks.Items)
+                {
+                    if (item.Text.ToLower().StartsWith(txtSearch.Text.ToLower()))
+                    {
+                        item.Selected = true;
+                        item.BackColor = Color.CornflowerBlue;
+                        item.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        item.Selected = false;
+                        item.BackColor = Color.White;
+                        item.ForeColor = Color.Black;
+                    }
+                    if (lstNetworks.SelectedItems.Count == 1)
+                    {
+                        lstNetworks.Focus();
+                    }
+                }
             }
         }
 
         private void BtnSearch_Enter(object sender, EventArgs e)
         {
             throw new NotImplementedException();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
         }
     }
 }
