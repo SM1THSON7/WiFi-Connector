@@ -124,8 +124,6 @@ namespace WiFi_Connector
                     {
                         lstNetworks.Focus();
                     }
-                    MessageBox.Show("Hello World");
-                    MessageBox.Show("Hello Wofrfqrrfregrgrgrld");
                 }
             }
         }
