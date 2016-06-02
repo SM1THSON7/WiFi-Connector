@@ -10,3 +10,12 @@ c:\users\curtis\documents\visual studio 2015\Projects\WiFi Connector\WiFi Connec
 C:\Users\Curtis\Desktop\Project\Wifi Repo\WiFiConnector\WiFi Connector\bin\Debug\WiFi Connector.exe.config
 C:\Users\Curtis\Desktop\Project\Wifi Repo\WiFiConnector\WiFi Connector\obj\Debug\WiFi Connector.exe
 C:\Users\Curtis\Desktop\Project\Wifi Repo\WiFiConnector\WiFi Connector\obj\Debug\WiFi Connector.pdb
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\bin\Debug\WiFi Connector.exe.config
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\WiFi Connector.exe
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\WiFi Connector.pdb
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\WiFi Connector.csprojResolveAssemblyReference.cache
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\WiFi_Connector.Form1.resources
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\WiFi_Connector.Properties.Resources.resources
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\WiFi Connector.csproj.GenerateResource.Cache
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\bin\Debug\WiFi Connector.exe
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\bin\Debug\WiFi Connector.pdb

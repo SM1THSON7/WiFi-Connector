@@ -99,17 +99,17 @@
             // SSID
             // 
             this.SSID.Text = "SSID";
-            this.SSID.Width = 156;
+            this.SSID.Width = 131;
             // 
             // Encryption
             // 
             this.Encryption.Text = "Encryption";
-            this.Encryption.Width = 65;
+            this.Encryption.Width = 82;
             // 
             // Signal
             // 
             this.Signal.Text = "Signal";
-            this.Signal.Width = 169;
+            this.Signal.Width = 63;
             // 
             // button2
             // 
@@ -391,9 +391,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "WiFi-Finder";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -1,8 +1,12 @@
 ﻿using NativeWifi;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WiFi_Connector
@@ -48,15 +52,34 @@ namespace WiFi_Connector
 
         private void lstNetworks_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            DetailsForm tf = new DetailsForm();
-            tf.ShowDialog();
+            Form Details = new Form();
+            Label NetworkName = new Label();
+            NetworkName.Text = "Network Name";
+            TextBox name = new TextBox();
+            Label signalLabel = new Label();
+            signalLabel.Text = "Signal Strength";
+            TextBox signal = new TextBox();
+            Details.Controls.Add(NetworkName);
+            Details.Controls.Add(name);
+            Details.Controls.Add(signalLabel);
+            Details.Controls.Add(signal);
+            NetworkName.Location = new Point(10, 10);
+            name.Location = new Point(10, 35);
+            name.Size = new Size(199, 20);
+            signalLabel.Location = new Point(10, 70);
+            signal.Location = new Point(10, 95);
+            signal.Size = new Size(199, 20);
+            Button connect = new Button();
+            connect.Location = new Point(170, 225);
+            connect.Text = "Connect";
+            Details.Text = lstNetworks.SelectedItems[0].Text;
+            Details.Controls.Add(connect);
+            Details.ShowDialog();
 
-            //DetailsControl dc = new DetailsControl(this);
-
-            //name.Text = lstNetworks.SelectedItems[0].ToString();
+            name.Text = lstNetworks.SelectedItems[0].ToString();
         }
 
-        public void btnSearch_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem item in lstNetworks.Items)
             {
@@ -64,7 +87,7 @@ namespace WiFi_Connector
                 {
                     item.Selected = true;
                     item.BackColor = Color.CornflowerBlue;
-                    item.ForeColor = Color.White;
+                    item.ForeColor = Color.Red;
                 }
                 else
                 {
@@ -83,16 +106,28 @@ namespace WiFi_Connector
         {
             if (e.KeyCode == Keys.Enter)
             {
-                btnSearch_Click(this, new EventArgs());
+                foreach (ListViewItem item in lstNetworks.Items)
+                {
+                    if (item.Text.ToLower().StartsWith(txtSearch.Text.ToLower()))
+                    {
+                        item.Selected = true;
+                        item.BackColor = Color.CornflowerBlue;
+                        item.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        item.Selected = false;
+                        item.BackColor = Color.White;
+                        item.ForeColor = Color.Black;
+                    }
+                    if (lstNetworks.SelectedItems.Count == 1)
+                    {
+                        lstNetworks.Focus();
+                    }
+                    MessageBox.Show("Hello World");
+                    MessageBox.Show("Hello Wofrfqrrfregrgrgrld");
+                }
             }
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
-    }
-
-    public class Enter
-    {
     }
 }
