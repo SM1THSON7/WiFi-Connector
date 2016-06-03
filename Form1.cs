@@ -18,7 +18,7 @@ namespace WiFi_Connector
         public Form1()
         {
             //Sets UI culture to French (France)
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
             //Sets UI culture to German (Germany)
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
             InitializeComponent();
