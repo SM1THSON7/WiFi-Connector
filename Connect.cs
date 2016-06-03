@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace WiFi_Connector
 {
-    public partial class DetailsForm : Form
+    public partial class Connect : Form
     {
-        public DetailsForm()
+        private Form1 mainForm;
+
+        public Connect()
         {
             InitializeComponent();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

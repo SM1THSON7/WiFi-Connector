@@ -26,3 +26,4 @@ C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connec
 C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\WiFi_Connector.Form1.fr-FR.resources
 C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\de-DE\WiFi Connector.resources.dll
 C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\fr-FR\WiFi Connector.resources.dll
+C:\Users\Curtis\Documents\Visual Studio 2015\Projects\WiFi Connector\WiFi-Connector\obj\Debug\WiFi_Connector.Connect.resources
