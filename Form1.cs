@@ -163,6 +163,8 @@ namespace WiFi_Connector
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            
             wifi = new Wifi();
 
             List<AccessPoint> aps = wifi.GetAccessPoints();
