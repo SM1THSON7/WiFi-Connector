@@ -33,21 +33,23 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.tabFind = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabConnect = new System.Windows.Forms.TabPage();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.lstNetworks = new System.Windows.Forms.ListView();
             this.SSID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Encryption = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Signal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnFind = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.Signal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnConnect = new System.Windows.Forms.Button();
-            this.lblNetworkName = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabConnect = new System.Windows.Forms.TabPage();
+            this.chkPW = new System.Windows.Forms.CheckBox();
+            this.lblConfirm = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
+            this.lblNetworkName = new System.Windows.Forms.Label();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabFind.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabConnect.SuspendLayout();
@@ -72,25 +74,6 @@
             resources.ApplyResources(this.tabFind, "tabFind");
             this.tabFind.Name = "tabFind";
             this.tabFind.UseVisualStyleBackColor = true;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabFind);
-            this.tabControl1.Controls.Add(this.tabConnect);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            // 
-            // tabConnect
-            // 
-            this.tabConnect.Controls.Add(this.lblPassword);
-            this.tabConnect.Controls.Add(this.lblNetworkName);
-            this.tabConnect.Controls.Add(this.btnConnect);
-            this.tabConnect.Controls.Add(this.textBox2);
-            this.tabConnect.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.tabConnect, "tabConnect");
-            this.tabConnect.Name = "tabConnect";
-            this.tabConnect.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
@@ -127,6 +110,10 @@
             // 
             resources.ApplyResources(this.Encryption, "Encryption");
             // 
+            // Signal
+            // 
+            resources.ApplyResources(this.Signal, "Signal");
+            // 
             // btnFind
             // 
             resources.ApplyResources(this.btnFind, "btnFind");
@@ -140,35 +127,65 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown_1);
             // 
-            // Signal
+            // tabControl1
             // 
-            resources.ApplyResources(this.Signal, "Signal");
+            this.tabControl1.Controls.Add(this.tabFind);
+            this.tabControl1.Controls.Add(this.tabConnect);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
             // 
-            // textBox1
+            // tabConnect
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            this.tabConnect.Controls.Add(this.chkPW);
+            this.tabConnect.Controls.Add(this.lblConfirm);
+            this.tabConnect.Controls.Add(this.lblPassword);
+            this.tabConnect.Controls.Add(this.lblNetworkName);
+            this.tabConnect.Controls.Add(this.btnConnect);
+            this.tabConnect.Controls.Add(this.textBox2);
+            this.tabConnect.Controls.Add(this.textBox1);
+            resources.ApplyResources(this.tabConnect, "tabConnect");
+            this.tabConnect.Name = "tabConnect";
+            this.tabConnect.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // chkPW
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.chkPW, "chkPW");
+            this.chkPW.Name = "chkPW";
+            this.chkPW.UseVisualStyleBackColor = true;
+            this.chkPW.CheckedChanged += new System.EventHandler(this.chkPW_CheckedChanged);
             // 
-            // btnConnect
+            // lblConfirm
             // 
-            resources.ApplyResources(this.btnConnect, "btnConnect");
-            this.btnConnect.Name = "btnConnect";
-            this.btnConnect.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.lblConfirm, "lblConfirm");
+            this.lblConfirm.Name = "lblConfirm";
+            // 
+            // lblPassword
+            // 
+            resources.ApplyResources(this.lblPassword, "lblPassword");
+            this.lblPassword.Name = "lblPassword";
             // 
             // lblNetworkName
             // 
             resources.ApplyResources(this.lblNetworkName, "lblNetworkName");
             this.lblNetworkName.Name = "lblNetworkName";
             // 
-            // lblPassword
+            // btnConnect
             // 
-            resources.ApplyResources(this.lblPassword, "lblPassword");
-            this.lblPassword.Name = "lblPassword";
+            resources.ApplyResources(this.btnConnect, "btnConnect");
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
             // 
             // Form1
             // 
@@ -210,6 +227,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblNetworkName;
+        private System.Windows.Forms.Label lblConfirm;
+        private System.Windows.Forms.CheckBox chkPW;
     }
 }
 
