@@ -4,9 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,10 +18,15 @@ namespace WiFi_Connector
 {
     public partial class Form1 : Form
     {
+        private Process newProcess = new Process();
         private Wifi wifi;
 
         public Form1()
         {
+            newProcess.StartInfo.UseShellExecute = false;
+            newProcess.StartInfo.CreateNoWindow = true;
+            newProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+
             //Sets UI culture to French (France)
             //Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
             //Sets UI culture to German (Germany)
@@ -161,10 +168,45 @@ namespace WiFi_Connector
 
         private void ConnectToNetwork()
         {
-            textBox1.Text = lstNetworks.SelectedItems[0].ToString();
+            //textBox1.Text = lstNetworks.SelectedItems[0].ToString();
             textBox1.BackColor = Color.White;
             textBox1.ForeColor = Color.Red;
-            textBox1.Enabled = false;
+        }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            if (lstNetworks.SelectedItems.Count > 0 && textBox2.Text.Length > 0)
+            {
+                ListViewItem selectedItem = lstNetworks.SelectedItems[0];
+                AccessPoint ap = (AccessPoint)selectedItem.Tag;
+
+                if (connectToWifi(ap, txtSearch.Text))
+                    lblConfirm.Text = "You connected successfully to the network" + ap.Name + ".";
+                else
+                    lblConfirm.Text = "Connection Failed";
+            }
+            else
+                lblConfirm.Text = "Please select a network \nor enter a password";
+        }
+
+        private bool connectToWifi(AccessPoint ap, string password)
+        {
+            AuthRequest authRequest = new AuthRequest(ap);
+            authRequest.Password = password;
+
+            return ap.Connect(authRequest);
+        }
+
+        private void chkPW_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (chkPW.Checked)
+            //{
+            //    textBox2.UseSystemPasswordChar = false;
+            //}
+            //else
+            //{
+            //    textBox2.UseSystemPasswordChar = true;
+            //}
         }
     }
 }
