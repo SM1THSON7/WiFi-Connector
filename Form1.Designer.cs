@@ -30,73 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.lstNetworks = new System.Windows.Forms.ListView();
-            this.SSID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Encryption = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Signal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.tabFind = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabConnect = new System.Windows.Forms.TabPage();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.lstNetworks = new System.Windows.Forms.ListView();
+            this.SSID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Encryption = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnFind = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.Signal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.lblNetworkName = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.tabFind.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabConnect.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // lstNetworks
-            // 
-            this.lstNetworks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.SSID,
-            this.Encryption,
-            this.Signal});
-            this.lstNetworks.FullRowSelect = true;
-            resources.ApplyResources(this.lstNetworks, "lstNetworks");
-            this.lstNetworks.Name = "lstNetworks";
-            this.lstNetworks.UseCompatibleStateImageBehavior = false;
-            this.lstNetworks.View = System.Windows.Forms.View.Details;
-            this.lstNetworks.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstNetworks_MouseDoubleClick);
-            // 
-            // SSID
-            // 
-            resources.ApplyResources(this.SSID, "SSID");
-            // 
-            // Encryption
-            // 
-            resources.ApplyResources(this.Encryption, "Encryption");
-            // 
-            // Signal
-            // 
-            resources.ApplyResources(this.Signal, "Signal");
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txtSearch
-            // 
-            resources.ApplyResources(this.txtSearch, "txtSearch");
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
-            // 
-            // btnSearch
-            // 
-            resources.ApplyResources(this.btnSearch, "btnSearch");
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // toolTip1
             // 
@@ -109,6 +64,11 @@
             // 
             // tabFind
             // 
+            this.tabFind.Controls.Add(this.btnClear);
+            this.tabFind.Controls.Add(this.btnRefresh);
+            this.tabFind.Controls.Add(this.lstNetworks);
+            this.tabFind.Controls.Add(this.btnFind);
+            this.tabFind.Controls.Add(this.txtSearch);
             resources.ApplyResources(this.tabFind, "tabFind");
             this.tabFind.Name = "tabFind";
             this.tabFind.UseVisualStyleBackColor = true;
@@ -123,46 +83,133 @@
             // 
             // tabConnect
             // 
+            this.tabConnect.Controls.Add(this.lblPassword);
+            this.tabConnect.Controls.Add(this.lblNetworkName);
+            this.tabConnect.Controls.Add(this.btnConnect);
+            this.tabConnect.Controls.Add(this.textBox2);
+            this.tabConnect.Controls.Add(this.textBox1);
             resources.ApplyResources(this.tabConnect, "tabConnect");
             this.tabConnect.Name = "tabConnect";
             this.tabConnect.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.Name = "btnClear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnRefresh
+            // 
+            resources.ApplyResources(this.btnRefresh, "btnRefresh");
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnSearch_Click_1);
+            // 
+            // lstNetworks
+            // 
+            this.lstNetworks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.SSID,
+            this.Encryption,
+            this.Signal});
+            this.lstNetworks.FullRowSelect = true;
+            resources.ApplyResources(this.lstNetworks, "lstNetworks");
+            this.lstNetworks.Name = "lstNetworks";
+            this.lstNetworks.UseCompatibleStateImageBehavior = false;
+            this.lstNetworks.View = System.Windows.Forms.View.Details;
+            this.lstNetworks.DoubleClick += new System.EventHandler(this.lstNetworks_DoubleClick);
+            // 
+            // SSID
+            // 
+            resources.ApplyResources(this.SSID, "SSID");
+            // 
+            // Encryption
+            // 
+            resources.ApplyResources(this.Encryption, "Encryption");
+            // 
+            // btnFind
+            // 
+            resources.ApplyResources(this.btnFind, "btnFind");
+            this.btnFind.Name = "btnFind";
+            this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
+            // txtSearch
+            // 
+            resources.ApplyResources(this.txtSearch, "txtSearch");
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown_1);
+            // 
+            // Signal
+            // 
+            resources.ApplyResources(this.Signal, "Signal");
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // btnConnect
+            // 
+            resources.ApplyResources(this.btnConnect, "btnConnect");
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            // 
+            // lblNetworkName
+            // 
+            resources.ApplyResources(this.lblNetworkName, "lblNetworkName");
+            this.lblNetworkName.Name = "lblNetworkName";
+            // 
+            // lblPassword
+            // 
+            resources.ApplyResources(this.lblPassword, "lblPassword");
+            this.lblPassword.Name = "lblPassword";
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lstNetworks);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabFind.ResumeLayout(false);
+            this.tabFind.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tabConnect.ResumeLayout(false);
+            this.tabConnect.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListView lstNetworks;
-        private System.Windows.Forms.ColumnHeader SSID;
-        private System.Windows.Forms.ColumnHeader Encryption;
-        private System.Windows.Forms.ColumnHeader Signal;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabFind;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabConnect;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.ListView lstNetworks;
+        private System.Windows.Forms.ColumnHeader SSID;
+        private System.Windows.Forms.ColumnHeader Encryption;
+        private System.Windows.Forms.Button btnFind;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ColumnHeader Signal;
+        private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblNetworkName;
     }
 }
 
