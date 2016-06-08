@@ -34,13 +34,6 @@ namespace WiFi_Connector
             InitializeComponent();
         }
 
-        private void lstNetworks_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Connect connect = new Connect();
-            connect.Show();
-            //name.Text = lstNetworks.SelectedItems[0].ToString();
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             tabControl1.TabPages.Remove((tabConnect));
@@ -158,7 +151,11 @@ namespace WiFi_Connector
             int index = 1;
             tabControl1.TabPages.Insert(index, tabConnect);
             tabControl1.SelectTab(tabConnect);
+            txtNetworkName.Text = lstNetworks.SelectedItems[0].ToString();
             ConnectToNetwork();
+
+            string name = lstNetworks.SelectedItems[0].SubItems[0].Text;
+            txtNetworkName.Text = name;
 
             if (tabControl1.SelectedTab == tabFind)
             {
@@ -169,8 +166,8 @@ namespace WiFi_Connector
         private void ConnectToNetwork()
         {
             //textBox1.Text = lstNetworks.SelectedItems[0].ToString();
-            textBox1.BackColor = Color.White;
-            textBox1.ForeColor = Color.Red;
+            txtNetworkName.BackColor = Color.White;
+            txtNetworkName.ForeColor = Color.Red;
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -181,12 +178,19 @@ namespace WiFi_Connector
                 AccessPoint ap = (AccessPoint)selectedItem.Tag;
 
                 if (connectToWifi(ap, txtSearch.Text))
-                    lblConfirm.Text = "You connected successfully to the network" + ap.Name + ".";
+                {
+                    lblConfirm.ForeColor = Color.Blue;
+                    lblConfirm.Text = "You connected successfully to " + ap.Name + ".";
+                }
                 else
+                {
+                    lblConfirm.ForeColor = Color.Red;
                     lblConfirm.Text = "Connection Failed";
+                }
             }
             else
-                lblConfirm.Text = "Please select a network \nor enter a password";
+                lblConfirm.ForeColor = Color.Red;
+            lblConfirm.Text = "Please select a network \nor enter a password";
         }
 
         private bool connectToWifi(AccessPoint ap, string password)

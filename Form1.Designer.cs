@@ -49,7 +49,7 @@
             this.lblNetworkName = new System.Windows.Forms.Label();
             this.btnConnect = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNetworkName = new System.Windows.Forms.TextBox();
             this.tabFind.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabConnect.SuspendLayout();
@@ -143,7 +143,7 @@
             this.tabConnect.Controls.Add(this.lblNetworkName);
             this.tabConnect.Controls.Add(this.btnConnect);
             this.tabConnect.Controls.Add(this.textBox2);
-            this.tabConnect.Controls.Add(this.textBox1);
+            this.tabConnect.Controls.Add(this.txtNetworkName);
             resources.ApplyResources(this.tabConnect, "tabConnect");
             this.tabConnect.Name = "tabConnect";
             this.tabConnect.UseVisualStyleBackColor = true;
@@ -182,10 +182,10 @@
             resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
             // 
-            // textBox1
+            // txtNetworkName
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txtNetworkName, "txtNetworkName");
+            this.txtNetworkName.Name = "txtNetworkName";
             // 
             // Form1
             // 
@@ -224,7 +224,7 @@
         private System.Windows.Forms.ColumnHeader Signal;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNetworkName;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblNetworkName;
         private System.Windows.Forms.Label lblConfirm;
