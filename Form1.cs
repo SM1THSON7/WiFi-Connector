@@ -26,19 +26,11 @@ namespace WiFi_Connector
             newProcess.StartInfo.UseShellExecute = false;
             newProcess.StartInfo.CreateNoWindow = true;
             newProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-
             //Sets UI culture to French (France)
             //Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
             //Sets UI culture to German (Germany)
             //Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
             InitializeComponent();
-        }
-
-        private void lstNetworks_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Connect connect = new Connect();
-            connect.Show();
-            //name.Text = lstNetworks.SelectedItems[0].ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -168,7 +160,6 @@ namespace WiFi_Connector
 
         private void ConnectToNetwork()
         {
-            //textBox1.Text = lstNetworks.SelectedItems[0].ToString();
             textBox1.BackColor = Color.White;
             textBox1.ForeColor = Color.Red;
         }
