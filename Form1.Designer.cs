@@ -49,10 +49,14 @@
             this.lblNetworkName = new System.Windows.Forms.Label();
             this.btnConnect = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pnl1 = new System.Windows.Forms.Panel();
+            this.lblIP = new System.Windows.Forms.Label();
+            this.chkDetails = new System.Windows.Forms.CheckBox();
+            this.lblNetwork = new System.Windows.Forms.Label();
             this.tabFind.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabConnect.SuspendLayout();
+            this.pnl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolTip1
@@ -137,13 +141,14 @@
             // 
             // tabConnect
             // 
+            this.tabConnect.Controls.Add(this.lblNetwork);
+            this.tabConnect.Controls.Add(this.chkDetails);
+            this.tabConnect.Controls.Add(this.pnl1);
             this.tabConnect.Controls.Add(this.chkPW);
-            this.tabConnect.Controls.Add(this.lblConfirm);
             this.tabConnect.Controls.Add(this.lblPassword);
             this.tabConnect.Controls.Add(this.lblNetworkName);
             this.tabConnect.Controls.Add(this.btnConnect);
             this.tabConnect.Controls.Add(this.textBox2);
-            this.tabConnect.Controls.Add(this.textBox1);
             resources.ApplyResources(this.tabConnect, "tabConnect");
             this.tabConnect.Name = "tabConnect";
             this.tabConnect.UseVisualStyleBackColor = true;
@@ -181,11 +186,31 @@
             // 
             resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
+            this.textBox2.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // pnl1
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            this.pnl1.Controls.Add(this.lblIP);
+            this.pnl1.Controls.Add(this.lblConfirm);
+            resources.ApplyResources(this.pnl1, "pnl1");
+            this.pnl1.Name = "pnl1";
+            // 
+            // lblIP
+            // 
+            resources.ApplyResources(this.lblIP, "lblIP");
+            this.lblIP.Name = "lblIP";
+            // 
+            // chkDetails
+            // 
+            resources.ApplyResources(this.chkDetails, "chkDetails");
+            this.chkDetails.Name = "chkDetails";
+            this.chkDetails.UseVisualStyleBackColor = true;
+            this.chkDetails.CheckedChanged += new System.EventHandler(this.chkDetails_CheckedChanged);
+            // 
+            // lblNetwork
+            // 
+            resources.ApplyResources(this.lblNetwork, "lblNetwork");
+            this.lblNetwork.Name = "lblNetwork";
             // 
             // Form1
             // 
@@ -203,6 +228,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabConnect.ResumeLayout(false);
             this.tabConnect.PerformLayout();
+            this.pnl1.ResumeLayout(false);
+            this.pnl1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,11 +251,14 @@
         private System.Windows.Forms.ColumnHeader Signal;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblNetworkName;
         private System.Windows.Forms.Label lblConfirm;
         private System.Windows.Forms.CheckBox chkPW;
+        private System.Windows.Forms.CheckBox chkDetails;
+        private System.Windows.Forms.Panel pnl1;
+        private System.Windows.Forms.Label lblIP;
+        private System.Windows.Forms.Label lblNetwork;
     }
 }
 
