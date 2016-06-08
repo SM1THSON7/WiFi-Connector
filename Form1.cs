@@ -8,6 +8,10 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Net;
+
+using System.Net;
+
 using System.Security.Principal;
 using System.Text;
 using System.Threading;
@@ -152,7 +156,8 @@ namespace WiFi_Connector
             tabControl1.SelectTab(tabConnect);
             ConnectToNetwork();
             string name = lstNetworks.SelectedItems[0].SubItems[0].Text;
-            textBox1.Text = name;
+            lblNetwork.Text = name;
+            textBox2.Focus();
 
             if (tabControl1.SelectedTab == tabFind)
             {
@@ -162,19 +167,30 @@ namespace WiFi_Connector
 
         private void ConnectToNetwork()
         {
-            textBox1.BackColor = Color.White;
-            textBox1.ForeColor = Color.Red;
+            lblNetwork.BackColor = Color.White;
+            lblNetwork.ForeColor = Color.Red;
+            lblNetwork.Font = new Font(lblNetwork.Font, FontStyle.Bold);
         }
+
+        private bool connectWasClicked = false;
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
+            connectWasClicked = true;
+
             if (lstNetworks.SelectedItems.Count > 0 && textBox2.Text.Length > 0)
             {
                 ListViewItem selectedItem = lstNetworks.SelectedItems[0];
                 AccessPoint ap = (AccessPoint)selectedItem.Tag;
 
                 if (connectToWifi(ap, txtSearch.Text))
+                {
                     lblConfirm.Text = "You connected successfully to the network" + ap.Name + ".";
+                    IPAddress IPAddress = Dns.GetHostEntry(Environment.MachineName)
+                        .AddressList.Where(i => i.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                        .FirstOrDefault();
+                    lblIP.Text = IPAddress.ToString();
+                }
                 else
                     lblConfirm.Text = "Connection Failed";
             }
@@ -191,6 +207,10 @@ namespace WiFi_Connector
         }
 
         private void chkPW_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void chkDetails_CheckedChanged(object sender, EventArgs e)
         {
         }
     }

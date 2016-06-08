@@ -375,11 +375,107 @@
   <data name="&gt;&gt;txtSearch.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="lblNetwork.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 61</value>
+  </data>
+  <data name="lblNetwork.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="lblNetwork.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblNetwork.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblNetwork.Name" xml:space="preserve">
+    <value>lblNetwork</value>
+  </data>
+  <data name="&gt;&gt;lblNetwork.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNetwork.Parent" xml:space="preserve">
+    <value>tabConnect</value>
+  </data>
+  <data name="&gt;&gt;lblNetwork.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkDetails.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 157</value>
+  </data>
+  <data name="chkDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 17</value>
+  </data>
+  <data name="chkDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chkDetails.Text" xml:space="preserve">
+    <value>Show Details</value>
+  </data>
+  <data name="&gt;&gt;chkDetails.Name" xml:space="preserve">
+    <value>chkDetails</value>
+  </data>
+  <data name="&gt;&gt;chkDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDetails.Parent" xml:space="preserve">
+    <value>tabConnect</value>
+  </data>
+  <data name="&gt;&gt;chkDetails.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblIP.Name" xml:space="preserve">
+    <value>lblIP</value>
+  </data>
+  <data name="&gt;&gt;lblIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblIP.Parent" xml:space="preserve">
+    <value>pnl1</value>
+  </data>
+  <data name="&gt;&gt;lblIP.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblConfirm.Name" xml:space="preserve">
+    <value>lblConfirm</value>
+  </data>
+  <data name="&gt;&gt;lblConfirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblConfirm.Parent" xml:space="preserve">
+    <value>pnl1</value>
+  </data>
+  <data name="&gt;&gt;lblConfirm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 223</value>
+  </data>
+  <data name="pnl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 115</value>
+  </data>
+  <data name="pnl1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnl1.Name" xml:space="preserve">
+    <value>pnl1</value>
+  </data>
+  <data name="&gt;&gt;pnl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl1.Parent" xml:space="preserve">
+    <value>tabConnect</value>
+  </data>
+  <data name="&gt;&gt;pnl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="chkPW.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkPW.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 159</value>
+    <value>64, 134</value>
   </data>
   <data name="chkPW.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 17</value>
@@ -400,37 +496,13 @@
     <value>tabConnect</value>
   </data>
   <data name="&gt;&gt;chkPW.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblConfirm.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblConfirm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 227</value>
-  </data>
-  <data name="lblConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="lblConfirm.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblConfirm.Name" xml:space="preserve">
-    <value>lblConfirm</value>
-  </data>
-  <data name="&gt;&gt;lblConfirm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblConfirm.Parent" xml:space="preserve">
-    <value>tabConnect</value>
-  </data>
-  <data name="&gt;&gt;lblConfirm.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lblPassword.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 117</value>
+    <value>61, 92</value>
   </data>
   <data name="lblPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 13</value>
@@ -451,13 +523,13 @@
     <value>tabConnect</value>
   </data>
   <data name="&gt;&gt;lblPassword.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="lblNetworkName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblNetworkName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 73</value>
+    <value>116, 48</value>
   </data>
   <data name="lblNetworkName.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 13</value>
@@ -478,10 +550,10 @@
     <value>tabConnect</value>
   </data>
   <data name="&gt;&gt;lblNetworkName.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btnConnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 182</value>
+    <value>119, 194</value>
   </data>
   <data name="btnConnect.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -502,13 +574,13 @@
     <value>tabConnect</value>
   </data>
   <data name="&gt;&gt;btnConnect.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 133</value>
+    <value>64, 108</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 20</value>
+    <value>182, 20</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -523,28 +595,7 @@
     <value>tabConnect</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 89</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 20</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>tabConnect</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="tabConnect.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -592,6 +643,54 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblConfirm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblConfirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 4</value>
+  </data>
+  <data name="lblConfirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lblConfirm.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblConfirm.Name" xml:space="preserve">
+    <value>lblConfirm</value>
+  </data>
+  <data name="&gt;&gt;lblConfirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblConfirm.Parent" xml:space="preserve">
+    <value>pnl1</value>
+  </data>
+  <data name="&gt;&gt;lblConfirm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblIP.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblIP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 16</value>
+  </data>
+  <data name="lblIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lblIP.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblIP.Name" xml:space="preserve">
+    <value>lblIP</value>
+  </data>
+  <data name="&gt;&gt;lblIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblIP.Parent" xml:space="preserve">
+    <value>pnl1</value>
+  </data>
+  <data name="&gt;&gt;lblIP.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
