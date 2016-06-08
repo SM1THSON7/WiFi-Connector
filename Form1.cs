@@ -151,6 +151,8 @@ namespace WiFi_Connector
             tabControl1.TabPages.Insert(index, tabConnect);
             tabControl1.SelectTab(tabConnect);
             ConnectToNetwork();
+            string name = lstNetworks.SelectedItems[0].SubItems[0].Text;
+            textBox1.Text = name;
 
             if (tabControl1.SelectedTab == tabFind)
             {
@@ -190,14 +192,6 @@ namespace WiFi_Connector
 
         private void chkPW_CheckedChanged(object sender, EventArgs e)
         {
-            //if (chkPW.Checked)
-            //{
-            //    textBox2.UseSystemPasswordChar = false;
-            //}
-            //else
-            //{
-            //    textBox2.UseSystemPasswordChar = true;
-            //}
         }
     }
 }
